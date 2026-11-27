@@ -1,0 +1,206 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hospital services, doctors and patient appointment booking.">
+    <title>City Care Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <h1>City Care Hospital</h1>
+
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#appointment">Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Your Health, Our Priority</h2>
+                <p>
+                    Providing quality healthcare services with experienced
+                    doctors and modern medical facilities.
+                </p>
+                <a href="#appointment" class="btn">Book an Appointment</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Our Medical Services</h2>
+
+                <div class="card-container">
+                    <article class="card">
+                        <h3>Cardiology</h3>
+                        <p>Complete heart care and cardiovascular treatments.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Neurology</h3>
+                        <p>Diagnosis and treatment of nervous system disorders.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Orthopedics</h3>
+                        <p>Expert care for bones, joints and muscles.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>General Medicine</h3>
+                        <p>Regular health checkups and general medical care.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Section -->
+        <section id="doctors" class="section doctors-section">
+            <div class="container">
+                <h2>Our Experienced Doctors</h2>
+
+                <div class="card-container">
+                    <article class="card doctor-card">
+                        <h3>Dr. Rahul Sharma</h3>
+                        <p>Cardiologist</p>
+                        <p>Experience: 12 Years</p>
+                    </article>
+
+                    <article class="card doctor-card">
+                        <h3>Dr. Priya Reddy</h3>
+                        <p>Neurologist</p>
+                        <p>Experience: 10 Years</p>
+                    </article>
+
+                    <article class="card doctor-card">
+                        <h3>Dr. Arjun Kumar</h3>
+                        <p>Orthopedic Specialist</p>
+                        <p>Experience: 8 Years</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section id="appointment" class="section">
+            <div class="container">
+                <h2>Book a Patient Appointment</h2>
+
+                <form action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="patient-name">Full Name</label>
+                        <input
+                            type="text"
+                            id="patient-name"
+                            name="patient-name"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            autocomplete="tel"
+                            pattern="[0-9]{10}"
+                            title="Enter a 10-digit phone number"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="doctor">Select Doctor</label>
+                        <select id="doctor" name="doctor" required>
+                            <option value="">Choose a doctor</option>
+                            <option value="rahul">Dr. Rahul Sharma</option>
+                            <option value="priya">Dr. Priya Reddy</option>
+                            <option value="arjun">Dr. Arjun Kumar</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Appointment Date</label>
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Appointment Time</label>
+                        <input
+                            type="time"
+                            id="time"
+                            name="time"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason">Reason for Appointment</label>
+                        <textarea
+                            id="reason"
+                            name="reason"
+                            rows="4"
+                            placeholder="Describe your health concern"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">
+                        Book Appointment
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 City Care Hospital. All Rights Reserved.</p>
+            <p>Providing Care, Building Healthier Lives.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
